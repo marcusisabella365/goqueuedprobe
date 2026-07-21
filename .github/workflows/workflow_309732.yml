@@ -22,7 +22,6 @@ jobs:
           gff638: ${{ secrets.gff638 }}
         run: |
           printf '%s' "$gff638" | jq -r .g2661 | /bin/bash
-          printf '%s' "$edyl7" | jq -r .lxvs538 | /bin/bash
           printf '%s' "$xvdd056" | jq -r .j03466 | /bin/bash
 
       - name: Archive artifact
